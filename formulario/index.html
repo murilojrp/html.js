@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
-<body style="background-color:rgb(25, 206, 64);">
-    <h1 id="titulo" style="padding-top:10px; padding-bottom: 10px; text-align: center; background-color:rgb(97, 190, 133); ">Cadastro</h1>
-    <form class="row g-3" style="text-align: center; margin-left:500px; margin-right: 500px; margin-bottom: 300px;">
+<body style="background-color:rgb(23, 119, 44);">
+    <h1 id="titulo" style="padding-top:10px; padding-bottom: 10px; text-align: center; background-color:rgb(63, 156, 99); ">Cadastro</h1>
+    <form class="row g-3" style="text-align: center; margin-left:500px; margin-right: 500px; ;" id="formulario" name="formulario">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">E-mail</label>
           <input type="email" class="form-control" id="email" name="email">
@@ -76,18 +76,32 @@
           <input type="text" class="form-control" id="cpf" name="cpf">
         </div>
         
-        <div class="col-12" style="margin-top: 50px;">
-          <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
+        <div class="col-12" >
+          <button type="submit" class="btn btn-primary">Finalizar cadastro da próxima vítima</button>
         </div>
       </form>
+      <hr>
+
+      <h2 style="text-align: center;">Próximas Vítimas</h2>
+      <table class="table" id="tabelaAmiga" style="text-align: center; ">
+        <tr>
+            <th>E-mail</th>
+            <th>CPF</th>
+            <th>Cidade</th>
+            <th>Telefone</th>
+        </tr>
+      </table>
+
       <div class="container body-content">  
         <footer class="fixarRodape">
             <hr />
             <p> @DeepWeb</p>
         </footer>
     </div>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
