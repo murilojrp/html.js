@@ -9,11 +9,12 @@
 
 </head>
 <body style="background-color:rgb(23, 119, 44);">
-    <h1 id="titulo" style="padding-top:10px; padding-bottom: 10px; text-align: center; background-color:rgb(63, 156, 99); ">Cadastro</h1>
-    <form class="row g-3" style="text-align: center; margin-left:500px; margin-right: 500px; ;" id="formulario" name="formulario">
+  <h1 id="titulo" style="padding-top:10px; padding-bottom: 10px; text-align: center; background-color:rgb(63, 156, 99); ">AssassinosDeAluguel.com</h1>
+    <h3 id="titulo" style="padding-top:10px; padding-bottom: 10px; text-align: center; background-color:rgb(63, 156, 99); ">Cadastre a próxima vítima</h3>
+    <form class="row g-3" style="text-align: center; margin-left:250px; margin-right: 250px; ;" id="formulario" name="formulario">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" name="email">
+          <label for="inputEmail4" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto">
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Senha</label>
@@ -82,13 +83,14 @@
       </form>
       <hr>
 
-      <h2 style="text-align: center;">Próximas Vítimas</h2>
+      <h3 style="text-align: center;">Próximas Vítimas</h3>
       <table class="table" id="tabelaAmiga" style="text-align: center; ">
         <tr>
-            <th>E-mail</th>
+            <th>Nome Completo</th>
             <th>CPF</th>
             <th>Cidade</th>
             <th>Telefone</th>
+            <th></th>
         </tr>
       </table>
 
